@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta charset utf8>
+      <title>My Experiences</title>
+      <link rel="stylesheet" href="css for exp.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+     <div class="w3-container w3-center w3-animate-opacity">
+          <p>MY EXPERIENCES</p>
+     </div>
+
+     <div class="square"></div>
+
+
+     <div class="skillbars">
+     <p class="exp">HTML</p>
+     <div class="container">
+       <div class="skills html">70%</div>
+     </div>
+     
+     <p class="exp">CSS</p>
+     <div class="container">
+       <div class="skills css">55%</div>
+     </div>
+     
+     <p class="exp">Java</p>
+     <div class="container">
+       <div class="skills java">30%</div>
+     </div>
+
+     <p class="exp">JavaScript</p>
+     <div class="container">
+       <div class="skills js">25%</div>
+     </div>
+
+     <p class="exp">Python</p>
+     <div class="container">
+       <div class="skills python">25%</div>
+     </div>
+     
+     <p class="exp">PHP</p>
+     <div class="container">
+       <div class="skills php">10%</div>
+     </div>
+     </div>
+
+
+     <button class="button" onclick="typeWriter()" style="vertical-align:middle"><span>More</span></button></a>
+
+     <p id="demo" class="typewrite"></p>
+
+     <script>
+          var i = 0;
+          var txt = 
+          '"Hey Thank you for visiting my Personal Website Portfolio i really appreciate it. just wait this website can still update and change in the future. in the mean time i will create and learn more projects for clients best to use - steve" ';
+          var speed = 50;
+          
+          function typeWriter() {
+            if (i < txt.length) {
+              document.getElementById("demo").innerHTML += txt.charAt(i);
+              i++;
+              setTimeout(typeWriter, speed);
+            }
+          }
+          </script>
+
+     <div class="undersquare"></div>
+
+</body>
+</html>
